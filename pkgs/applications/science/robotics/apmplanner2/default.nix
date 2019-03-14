@@ -5,6 +5,7 @@
 
 stdenv.mkDerivation rec {
   name = "apmplanner2-${version}";
+  # TODO revert pin to Qt59 in pkgs/top-level/all-packages.nix on next release
   version = "2.0.26";
   src = fetchFromGitHub {
     owner = "ArduPilot";
