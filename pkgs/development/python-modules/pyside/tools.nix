@@ -13,6 +13,7 @@ buildPythonPackage rec {
 
   enableParallelBuilding = true;
 
+  nativeBuildInputs = [ cmake ];
   buildInputs = [ cmake pyside qt4 pysideShiboken ];
 
   meta = {
